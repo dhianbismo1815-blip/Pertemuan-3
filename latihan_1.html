@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 HTML Form</title>
+    <style>
+        body {fot-family:Arial;backgroud:f4f8ff;}
+        h1 {color:#1a56b0;text-align:center;}
+        table {border-collapse:collapse;width:100%;}
+        th {background:#1a56b0;color:white;padding:6px;}
+        td {border:1px solid#ccd;padding:6px;}
+        .aktif {bacground:#e6eefb;}
+        #judul {font-size:24px;}
+        </style>
+    <form action="proses.php" method="post">
+        <h1>Formulir Pendaftaran</h1>
+       Nama: <input type="text" name="nama" required><br><br>
+       Email: <input type="email" name="email" required><br><br>
+
+      Jenis Kelamin:
+       <label for="jenis_kelamin">Jenis kelamin:</label><br>
+        <input type="radio" name="jenis_kelamin" value="laki-laki" required> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="perempuan" required> Perempuan<br><br>
+
+        <label for="hobi">Hobi:</label><br>
+        <input type="checkbox" name="hobi" value="membaca" required> Membaca
+        <input type="checkbox" name="hobi" value="menulis" required> Menulis
+        <input type="checkbox" name="hobi" value="bersepeda" required> Bersepeda<br><br>
+        Jurusan:
+        <label for="jurusan"></label><br>
+        <select name="jurusan" required>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+        </select><br><br>
+        Alamat:
+        <label for="alamat"></label><br>
+        <textarea name="alamat"  required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+</head>
+<body>
+     <h1>Table Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th Cosplan="2">Nilai</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Budi</td>
+                <td>85</td>
+                <td>Lulus</td>
+               
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sari</td>
+                <td>78</td>
+                <td>Lulus</td>
+            </tr>
+           
+        </tbody>
+</head>
+</body>
+</html>
