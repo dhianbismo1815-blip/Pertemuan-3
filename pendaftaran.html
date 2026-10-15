@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+</head>
+<body>
+    <h1>Pendaftaran Peserta</h1>
+    <style>
+        body {font-family:Arial;background:#f4f8ff;}
+        h1 {color:#1a56b0;text-align:center;}
+        table {border-collapse:collapse;width:100%;}
+        th {background:#1a56b0;color:white;padding:6px;}
+        button[type="submit"] {background:#1a56b0;color:white;padding:6px;}
+        td {border:1px solid#ccd;padding:6px;}
+        .aktif {background:#e6eefb;}
+        #judul {font-size:24px;}
+    </style>
+    <!-- Membuat Form Pendaftaran -->
+    <form action="#" method="post">
+    <!-- Nama -->
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+    <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+<!-- Jenis Kelamin -->  
+        <label for="Jenis Kelamin">Jenis Kelamin:</label><br><br>
+        <input type="radio" id="jenis" name="Jenis Kelamin" value="laki-laki" required>
+        <label for="jenis">Laki-laki</label>
+        <input type="radio" id="jenis2" name="Jenis Kelamin" value="perempuan" required>
+        <label for="Jenis Kelamin">Perempuan</label><br><br>
+
+   <!-- Jurusan -->  
+    <label for="Jurusan">Jurusan:</label>
+        <select id="Jurusan" name="Jurusan" required>
+            <option value="">Pilih Jurusan</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Manajemen Informatika">Manajemen Informatika</option>
+        </select><br><br>
+    
+  <!-- Alamat -->  
+    <label for="Alamat">Alamat:</label><br><br>
+        <textarea id="Alamat" name="Alamat" rows="4" cols="50" required></textarea><br><br>
+    
+   <!-- Hobi -->   
+    <label for="Hobi">Hobi:</label><br><br>
+       <input type="checkbox" id="Hobi1" name="Hobi" value="Membaca">
+        <label for="Hobi1">Membaca</label><br>
+        <input type="checkbox" id="Hobi2" name="Hobi" value="Voli">
+        <label for="Hobi2">Voli</label><br>  
+        <input type="checkbox" id="Hobi3" name="Hobi" value="Sepak bola">
+        <label for="Hobi3">Sepak Bola</label><br>
+        <input type="checkbox" id="Hobi4" name="Hobi" value="Badminton">
+        <label for="Hobi4">Badminton</label><br><br>
+    </form><br>
+<!-- Membuat Tombol Kirim -->
+<button type="submit">KIRIM</button><br><br>
+
+<!-- Membuat Tabel Data Peserta -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>NAMA</th>
+                <th colspan="2">PRODI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>252520004</td>
+                <td>Dhian Bismo</td>
+                <td>Teknologi Informasi</td>
+                <td>3,79</td>
+            </tr>
+            <tr>
+                <td>252520052</td>
+                <td>Muchammad Nur Faizin</td>
+                <td>Teknologi Informasi</td>
+                <td>3,90</td>
+            </tr>
+            <tr>
+                <td>252520116</td>
+                <td>Evan Nabil Indrastra</td>
+                <td>Teknologi Informasi</td>
+                <td>3,80</td>
+            </tr>
+            <tr>
+                <td>25252011</td>
+                <td>Rizky Maulana</td>
+                <td>Manajemen</td>
+                <td>3,70</td>
+            </tr>
+            <tr>
+                <td>25252012</td>
+                <td>Ilham Prasetyo</td>
+                <td>Pendidikan Teknik Otomotif</td>
+                <td>3,75</td>
+        </tbody>
+</body>
+</html>
